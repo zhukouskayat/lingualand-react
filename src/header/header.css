@@ -1,0 +1,49 @@
+/* Geometry */
+#header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin: 10px 30px 10px 0px;
+  width: 50px;
+  height: 45px;
+}
+
+.contact {
+  margin: 0px 30px 0px auto;
+}
+
+.signUp {
+  justify-content: flex-end;
+}
+
+
+/* Colors */
+
+.fa-user {
+  color: #59459c;
+}
+
+#header {
+  color: #59459c;
+}
+
+/* Fonts */
+
+#header a{
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+#header .fas {
+  font-size: 18px;
+}
+
+/* Hover */
+
+#header a:hover,
+#menu-items a:hover {
+  color: #59459c;
+}
