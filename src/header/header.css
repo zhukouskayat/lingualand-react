@@ -29,15 +29,20 @@
   color: #59459c;
 }
 
-#header {
-  color: #59459c;
-}
-
 /* Fonts */
 
-#header a{
+.contact,
+.signUp,
+.courses{
   font-size: 18px;
   text-decoration: none;
+  color: black;
+}
+
+.contact.active,
+.signUp.active,
+.courses.active {
+  font-weight: 600;
   color: black;
 }
 
@@ -47,7 +52,6 @@
 
 /* Hover */
 
-#header a:hover,
-#menu-items a:hover {
+#header a:hover{
   color: #59459c;
 }
