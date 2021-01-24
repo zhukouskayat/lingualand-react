@@ -52,6 +52,15 @@
 
 /* Hover */
 
-#header a:hover{
+.contact:hover,
+.signUp:hover,
+.courses:hover{
   color: #59459c;
+}
+
+.contact.active:hover,
+.signUp.active:hover,
+.courses.active:hover {
+  font-weight: 600;
+  color: black;
 }
