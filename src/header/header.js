@@ -10,21 +10,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 
 const Header = () => (
-  <div id="header">
-    <NavLink exact to="/">
-      <img className="logo" src={logo} alt="logo" />
-    </NavLink>
-    <NavLink to="/courses" className="courses">
-      Language courses
-    </NavLink>
-    <NavLink exact to="/contacts" className="contact">
-      Contact us
-    </NavLink>
-    <NavLink exact to="/login" className="signUp">
-      Sign up
-      <FontAwesomeIcon icon={faUser} />
-    </NavLink>
-  </div>
+  <nav id="header">
+    <ul>
+      <li>
+        <NavLink exact to="/">
+          <img className="logo" src={logo} alt="logo" />
+        </NavLink>
+      </li>
+      <li>
+        <NavLink exact to="/courses" className="courses">
+          Language courses
+        </NavLink>
+      </li>
+      <li className="c-geometry">
+        <NavLink exact to="/contacts" className="contact">
+          Contact us
+        </NavLink>
+      </li>
+      <li className="s-geometry">
+        <NavLink exact to="/login" className="signUp">
+          Sign up
+          <FontAwesomeIcon icon={faUser} />
+        </NavLink>
+      </li>
+    </ul>
+  </nav>
 );
 
 export default Header;

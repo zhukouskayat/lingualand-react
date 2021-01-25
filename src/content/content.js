@@ -11,10 +11,18 @@ import { Route } from "react-router-dom";
 
 const Content = () => (
   <div id="content">
-      <Route exact path="/" component={Main} />
-      <Route path="/courses" component={Courses} />
-      <Route path="/contacts" component={ContactUs} />
-      <Route path="/login" component={SignUp} />
+    <Route exact path="/">
+      <Main />
+    </Route>
+    <Route path="/courses">
+      <Courses />
+    </Route>
+    <Route path="/contacts">
+      <ContactUs />
+    </Route>
+    <Route path="/login">
+      <SignUp />
+    </Route>
   </div>
 );
 

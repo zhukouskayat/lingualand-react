@@ -6,15 +6,15 @@ import Header from "./header/header";
 import Content from "./content/content";
 import Footer from "./footer/footer";
 
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Header />
       <Content />
       <Footer />
-    </BrowserRouter>
+    </Router>
   );
 }
 

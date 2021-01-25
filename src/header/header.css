@@ -1,7 +1,11 @@
 /* Geometry */
-#header {
+ul {
   display: flex;
   align-items: center;
+}
+
+li {
+  list-style-type: none;
 }
 
 .logo {
@@ -10,11 +14,11 @@
   height: 45px;
 }
 
-.contact {
+.c-geometry {
   margin: 0px 30px 0px auto;
 }
 
-.signUp {
+.s-geometry {
   justify-content: flex-end;
 }
 
