@@ -30,9 +30,9 @@ export default function Banner() {
 
   return (
     <div className="slider">
-      <div className="sliderImg sliderImagePrev">{images[prevImageIndex]}</div>
-      <div className="sliderImg sliderImage">{images[activeIndex]}</div>
-      <div className="sliderImg sliderImageNext">{images[nextImagesIndex]}</div>
+      <div className="sliderImg sliderImagePrev" key={prevImageIndex}>{images[prevImageIndex]}</div>
+      <div className="sliderImg sliderImage" key={activeIndex}>{images[activeIndex]}</div>
+      <div className="sliderImg sliderImageNext" key={nextImagesIndex}>{images[nextImagesIndex]}</div>
     </div>
   );
 }
