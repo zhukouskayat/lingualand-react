@@ -1,4 +1,5 @@
 #header,
-#footer {
+#footer,
+.infoBlock {
   padding: var(--padding-body);
 }

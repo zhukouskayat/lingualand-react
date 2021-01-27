@@ -1,0 +1,27 @@
+/* geometry */
+
+.infoBlock h1 {
+  margin: 50px 0px;
+}
+
+.infoBlock p {
+  margin-bottom: 15px;
+}
+
+.text:last-child {
+  margin-bottom: 50px;
+}
+
+/* fonts */
+
+.infoBlock h1 {
+  font-size: var(--font-size-h1);
+}
+
+.infoBlock p {
+  font-size: var(--font-size-p-big);
+}
+
+.text {
+  text-align: justify;
+}

@@ -1,0 +1,56 @@
+/* geometry */
+
+.statistics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.text-col1,
+.text-col2 {
+  width: 50%;
+}
+
+.faDollarSign {
+  width: 18px;
+  margin-left: 4px;
+  margin-right: 8px;
+}
+
+.faPercent {
+  margin-right: 3px;
+}
+
+.faHeadset,
+.faGlobe {
+  margin-right: 5px;
+}
+
+/* fonts */
+
+.statistics span {
+  font-weight: var(--font-weight);
+}
+
+/* colors */
+
+.statistics span {
+  color: #faa819;
+}
+
+.faDollarSign {
+color: #1bc2d6;
+}
+
+.faPercent {
+  color: #f91c5c;
+}
+
+.faHeadset {
+  color: #751cd3;
+}
+
+.faGlobe {
+  color: #faa819;
+}
