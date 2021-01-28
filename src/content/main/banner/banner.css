@@ -1,24 +1,4 @@
-.slider {
-  overflow: hidden;
-  width: 100%;
+.banner {
+  height: 100vh;
 }
 
-.sliderImg {
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  transition: all 0.5s;
-}
-
-.sliderImagePrev {
-  transform: translateX(-100%);
-}
-
-.sliderImageNext {
-  transform: translateX(100%);
-}
-
-.bannerBckg {
-  overflow: hidden;
-  width: 100%;
-}
