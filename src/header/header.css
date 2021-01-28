@@ -29,8 +29,12 @@ li {
 
 /* Colors */
 
-.fa-user {
-  color: #59459c;
+.faUser {
+  color: white;
+}
+
+#header {
+  background-color: #2E1AAF;
 }
 
 /* Fonts */
@@ -40,17 +44,17 @@ li {
 .courses{
   font-size: 18px;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .contact.active,
 .signUp.active,
 .courses.active {
   font-weight: 600;
-  color: black;
+  color:white;
 }
 
-.fa-user {
+.faUser {
   font-size: 16px;
 }
 
@@ -58,13 +62,13 @@ li {
 
 .contact:hover,
 .signUp:hover,
-.courses:hover{
-  color: #59459c;
+.courses:hover {
+  color: #adb9e2;
 }
 
 .contact.active:hover,
 .signUp.active:hover,
 .courses.active:hover {
   font-weight: 600;
-  color: black;
+  color: #adb9e2;
 }

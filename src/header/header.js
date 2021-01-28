@@ -30,7 +30,7 @@ const Header = () => (
       <li className="s-geometry">
         <NavLink exact to="/login" className="signUp">
           Sign up
-          <FontAwesomeIcon icon={faUser} />
+          <FontAwesomeIcon icon={faUser} className="faUser" />
         </NavLink>
       </li>
     </ul>
