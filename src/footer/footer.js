@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./footer.css";
+import ill from "../ill/footer-person.svg"
 
 const Footer = () => (
   <div id="footer">
@@ -17,7 +18,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="footer-row">
-      <div>
+      <div className="footer-text-row">
           LinguaLand.com 611 Gateway Blvd, South San Francisco, CA 94080, USA
       </div>
       <div>
@@ -26,6 +27,7 @@ const Footer = () => (
         <span>Terms of use</span>
       </div>
     </div>
+    <img className="ill" src={ill} alt="illustration" />
   </div>
 );
 

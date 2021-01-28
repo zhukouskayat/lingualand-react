@@ -1,3 +1,7 @@
+#footer {
+  position: relative;
+}
+
 .footer-col {
   display: flex;
   flex-direction: row;
@@ -24,6 +28,10 @@ h3 {
   padding-top: 100px;
 }
 
+.footer-text-row {
+  margin-right: 300px;
+}
+
 .footer-row span:first-child {
   margin-left: 0px;
 }
@@ -32,11 +40,26 @@ h3 {
   margin: 10px;
 }
 
+.ill {
+  position: absolute;
+  bottom: 0px;
+  right: 20%;
+  width: 400px;
+}
+
 /* Color */
 
 #footer {
-  background-color: var(--background-color);
+  background-color: #2E1AAF;
 }
+
+#footer h3,
+#footer p,
+#footer span,
+#footer div {
+  color: white;
+}
+
 
 /* Fonts */
 
@@ -58,5 +81,5 @@ h3 {
 #footer p:hover,
 #footer span:hover {
   cursor: pointer;
-  color: #505050;
+  color: #adb9e2;
 }
