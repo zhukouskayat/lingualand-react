@@ -29,18 +29,18 @@ time, mark, audio, video {
   --button-border-radius: 25px;
   --form-border: 1px solid #0E98AF;
 /* fonts */
-  --font-size-h1: 40px;
-  --font-size-h2: 24px;
+  --font-size-h1: 38px;
+  --font-size-h2: 30px;
   --font-size-h3: 24px;
   --font-size-button: 20px;
-  --font-size-p-big: 24px;
-  --font-size-p-medium: 20px;
+  --font-size-p-big: 22px;
+  --font-size-p-medium: 18px;
   --font-size-p-small: 16px;
   --font-weight: 600;
   --font-weight-p: 400;
 /* colors */
   --font-input-color: #C7C7C7;
-  --background-color: #FAFAFA;
+  --background-color: #f2f2f8;
   --font-button-color: white;
   --background-button-color: #68BDD1;
   --background-hover-button-color: #0E98AF;

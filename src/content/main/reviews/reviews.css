@@ -1,0 +1,12 @@
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reviews h2{
+  padding-bottom: 30px;
+}
+
+.reviews {
+  background-color: var(--background-color);
+}

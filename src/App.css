@@ -1,5 +1,6 @@
 #header,
 #footer,
-.infoBlock {
+.infoBlock,
+.reviews {
   padding: var(--padding-body);
 }

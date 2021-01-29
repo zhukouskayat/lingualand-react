@@ -1,0 +1,55 @@
+/* geometry */
+
+.reviewItem {
+    margin-bottom: 30px;
+    border-radius: 25px;
+}
+
+.reviewItem {
+    padding: 30px;
+}
+
+.reviewItem h3 {
+    margin-bottom: 15px;
+}
+
+.stars {
+    margin: 10px 0px;
+}
+
+/* fonts */
+
+.reviewItem h3 {
+    font-size: var(--font-size-h3);
+}
+
+.reviewItem h4 {
+    font-size: var(--font-size-h4);
+}
+
+.reviewSchoolName {
+    font-weight: var(--font-weight);
+}
+
+.reviewItem p {
+    font-size: var(--font-size-p-medium);
+    text-align: justify;
+}
+
+.faStar {
+    font-size: var(--font-size-p-small);
+}
+
+/* colors */
+
+.reviewSchoolName  {
+    color: #2e53bc;
+}
+
+.reviewItem {
+    background-color: white;
+}
+
+.faStar {
+    color: #faa819;
+}
