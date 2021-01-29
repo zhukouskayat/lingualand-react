@@ -5,6 +5,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import "./banner.css";
 
 import banner1 from "../../../ill/banner_1.svg";
+import banner2 from "../../../ill/banner_2.svg";
 
 export default function Banner() {
 
@@ -17,13 +18,13 @@ export default function Banner() {
           alt="First banner"
         />
       </Carousel.Item>
-      {/* <Carousel.Item interval={5000}>
+      <Carousel.Item interval={5000}>
         <img
           className="d-block w-100"
-          src={}
+          src={banner2}
       alt="Second banner"
         />
-      </Carousel.Item> */}
+      </Carousel.Item>
     </Carousel>
   );
 }
