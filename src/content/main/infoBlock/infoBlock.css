@@ -16,10 +16,12 @@
 
 .infoBlock h1 {
   font-size: var(--font-size-h1);
+  font-weight: var(--font-weight);
 }
 
 .infoBlock p {
   font-size: var(--font-size-p-big);
+  font-weight: var(--font-weight-p);
 }
 
 .text {

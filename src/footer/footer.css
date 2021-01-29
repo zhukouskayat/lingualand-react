@@ -64,12 +64,12 @@ h3 {
 /* Fonts */
 
 #footer h3 {
-  font-size: 20px;
+  font-size: var(--font-size-h3);
   font-weight: var(--font-weight);
 }
 
 #footer p {
-  font-size: 18px;
+  font-size: var(--font-size-p-medium);
 }
 
 #footer span {
