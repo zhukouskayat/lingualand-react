@@ -1,0 +1,26 @@
+.popup {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transform: scale(0);
+}
+
+.popup.active {
+    transform: scale(1);
+}
+
+.popupContent {
+    padding: 15px;
+    border-radius: 25px;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    z-index: 2;
+}
