@@ -1,0 +1,37 @@
+.subscribe {
+  text-align: center;
+}
+
+.subscribe h2 {
+  padding: 50px 0px 30px 0px;
+  font-size: var(--font-size-h2);
+}
+
+.emailSub {
+  padding-left: 10px;
+  width: 50%;
+  height: var(--button-height);
+  border: var(--form-border);
+  border-radius: var(--button-border-radius);
+}
+
+.buttonSub {
+  margin-top: 30px;
+  font-size: var(--font-size-button);
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: var(--button-border-radius);
+  background-color: #2e1aaf;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.buttonSub:hover {
+  background-color: #2e53bc;
+}
+
+.popupSub {
+  padding: 30px 30px 50px 30px;
+  font-size: var(--font-size-h2);
+  text-align: center;
+}

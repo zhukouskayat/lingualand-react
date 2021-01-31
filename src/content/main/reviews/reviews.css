@@ -4,6 +4,7 @@
 }
 
 .reviews h2{
+  font-size: var(--font-size-h2);
   padding-bottom: 30px;
 }
 

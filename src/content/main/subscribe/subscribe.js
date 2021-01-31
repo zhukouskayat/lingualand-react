@@ -1,31 +1,49 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import "./subscribe.css";
 
-import Popup from "../popup/popup"
+import Popup from "../popup/popup";
 
 const Subscribe = () => {
+  const [modalActive, setModalActive] = useState(false);
+  const [text, setText] = useState("");
 
-  const[modalActive, setModalActive] = useState(false);
+  function handleSubmit(event){
+    event.preventDefault();
 
-  return (
-    <div >
-    <h2>
-      Subscribe!
-    </h2>
-    <form>
-    <input type="email" placeholder="Email..." className="email" />
-    <button type="button" onClick={() => setModalActive(true)}>
-      Subscribe
-    </button>
-    </form>
-    <Popup  active={modalActive} setActive={setModalActive} contentBlock={popupSub()} />
-  </div>
-  )
+    const emailValue = text;
+  
+    if (emailValue !== "") {
+      setModalActive(true);
+      setText("")
+    } 
   }
 
-  const popupSub = () => {
-    return <div>Thanks for your subscription!</div>
-    }
+  return (
+    <div className="subscribe">
+      <h2>Subscribe!</h2>
+      <form>
+        <input type="email" placeholder="Email..." className="emailSub" value={text} onChange={(event) => setText(event.target.value)}/>
+        <div>
+        <button type="submit" className="buttonSub" onClick={(event) => handleSubmit(event)}>
+          Subscribe
+        </button>
+        </div>
+      </form>
+      <Popup
+        active={modalActive}
+        setActive={setModalActive}
+        children={popupSub()}
+        name={"Canсel"}
+      />
+    </div>
+  );
+};
+
+const popupSub = () => {
+  return (
+      <h3 className="popupSub" >Thanks for your subscription!</h3>
+  );
+};
 
 export default Subscribe;

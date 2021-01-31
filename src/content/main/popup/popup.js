@@ -2,12 +2,18 @@ import React from "react";
 
 import "./popup.css";
 
-const Popup = ({ active, setActive, contentBlock }) => {
-
+const Popup = ({ active, setActive, children, name }) => {
   return (
-    <div className={active ? "popup active" : "popup"} onClick={() => setActive(false)}>
-      <div className="popupContent" onClick={(event) => event.stopPropagation}>
-          {contentBlock}
+    <div className={active ? "popup active" : "popup"}>
+      <div className={active ? "popupContent active" : "popupContent"}>
+        {children}
+        <div className="popupButton">
+        <form>
+          <button type="button" onClick={() => setActive(false)}>
+            {name}
+          </button>
+        </form>
+        </div>
       </div>
     </div>
   );
