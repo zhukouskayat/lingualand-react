@@ -39,7 +39,14 @@
 
 .subIll {
   position: absolute;
-  left: 0;
-  top: 10%;
-  width: 150px;
+  z-index: 1;
+  right: 0;
+  top: 50px;
+  width: 250px;
+}
+
+.subError {
+  font-size: var(--font-size-p-medium);
+  color: #2e1aaf;
+  padding-top: 15px;
 }

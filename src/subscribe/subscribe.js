@@ -58,7 +58,7 @@ const Subscribe = () => {
           placeholder="Email..."
           className="emailSub"
         />
-        {emailDirty && emailError && <div>{emailError}</div>}
+        {emailDirty && emailError && <div className="subError">{emailError}</div>}
         <div>
           <button disabled={emailValid} onClick={(e) => handleSubmit(e)} type="submit" className="buttonSub">
             Subscribe
