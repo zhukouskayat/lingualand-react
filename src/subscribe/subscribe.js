@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 import "./subscribe.css";
 
-import Popup from "../popup/popup";
+import Popup from "../content/popup/popup";
 
-import subIll from "../../../ill/subscribe.svg";
+import subIll from "../ill/subscribe.svg";
 
 const Subscribe = () => {
   const [modalActive, setModalActive] = useState(false);
@@ -16,7 +16,7 @@ const Subscribe = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (emailError !== "") {
-      emailValid();
+      setEmailValid(false);
     } else {
       setEmailValid(true);
       setEmail("");
