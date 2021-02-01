@@ -1,10 +1,10 @@
 /* geometry */
 
-.request {
+.requestButton {
   background: transparent;
 }
 
-.icon, .request {
+.icon, .requestButton {
   position: fixed;
   bottom: -4px;
   right: 0px;
@@ -17,4 +17,29 @@
   cursor: pointer;
   width: 112px;
   height: 112px;
+}
+
+.reqButton {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+}
+
+#submitButtonRequest {
+  margin: 30px 0px 15px 0px;
+  background-color: #2e1aaf;
+}
+
+.reqInput {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  width: 100%;
+  height: var(--button-height);
+  border: var(--form-border);
+  border-radius: var(--button-border-radius);
+}
+
+#submitButtonRequest:hover {
+  cursor: pointer;
+  background-color: #2e53bc;
 }

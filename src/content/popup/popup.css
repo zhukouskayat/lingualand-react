@@ -18,10 +18,10 @@
 }
 
 .popupContent {
-  padding: 15px;
+  padding: 30px;
   border-radius: 25px;
   background-color: white;
-  width: 50vw;
+  width: 35vw;
   z-index: 2;
   transform: scale(0);
   transition: 0.5s all;

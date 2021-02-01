@@ -69,7 +69,7 @@ const Subscribe = () => {
         active={modalActive}
         setActive={setModalActive}
         children={popupSub()}
-        name={"Canсel"}
+        name={"Thanks"}
       />
       <img src={subIll} alt="illustration" className="subIll"></img>
     </div>
