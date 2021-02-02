@@ -3,9 +3,9 @@ import React, { useState } from "react";
 
 import "./request.css";
 
-import icon from "../../../ill/request.svg";
+import icon from "illustrations/request.svg";
 
-import Popup from "../../popup/popup";
+import Popup from "components/popup/popup";
 
 const RequestCallBack = () => {
   const [popupActive, setPopupActive] = useState(false);

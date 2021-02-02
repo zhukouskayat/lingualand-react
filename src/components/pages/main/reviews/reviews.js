@@ -4,7 +4,7 @@ import "./reviews.css";
 
 import ReviewItems from "./reviewItems/reviewItems"
 
-import revIll from "../../../ill/reviews.svg";
+import revIll from "illustrations/reviews.svg";
 
 const Reviews = () => (
   <div className="reviews">

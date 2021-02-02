@@ -1,16 +1,16 @@
 import React from "react";
 
-import "./content.css";
+import "./pages.css";
 
-import Main from "./main/main";
-import Courses from "./courses/courses";
-import ContactUs from "./contactUs/contactUs";
-import SignUp from "./signUp/signUp";
+import Main from "components/pages/main/main";
+import Courses from "components/pages/courses/courses";
+import ContactUs from "components/pages/contactUs/contactUs";
+import SignUp from "components/pages/signUp/signUp";
 
 import { Route } from "react-router-dom";
 
-const Content = () => (
-  <div id="content">
+const Pages = () => (
+  <div id="pages">
     <Route exact path="/">
       <Main />
     </Route>
@@ -26,4 +26,4 @@ const Content = () => (
   </div>
 );
 
-export default Content;
+export default Pages;

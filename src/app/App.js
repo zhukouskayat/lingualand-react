@@ -2,10 +2,9 @@ import React from "react";
 
 import "./App.css";
 
-import Header from "./header/header";
-import Content from "./content/content";
-import Subscribe from "./subscribe/subscribe"
-import Footer from "./footer/footer";
+import Header from "components/header/header";
+import Pages from "components/pages/pages";
+import Footer from "components/footer/footer";
 
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -13,8 +12,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <Content />
-      <Subscribe />
+      <Pages />
       <Footer />
     </Router>
   );

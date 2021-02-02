@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./footer.css";
-import ill from "../ill/footer-person.svg"
+import ill from "illustrations/footer-person.svg"
 
 const Footer = () => (
   <div id="footer">

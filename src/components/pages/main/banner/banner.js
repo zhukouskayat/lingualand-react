@@ -4,8 +4,8 @@ import Carousel from 'react-bootstrap/Carousel'
 
 import "./banner.css";
 
-import banner1 from "../../../ill/banner_1.svg";
-import banner2 from "../../../ill/banner_2.svg";
+import banner1 from "illustrations/banner_1.svg";
+import banner2 from "illustrations/banner_2.svg";
 
 export default function Banner() {
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../ill/logo.svg";
+import logo from "illustrations/logo.svg";
 
 import "./header.css";
 

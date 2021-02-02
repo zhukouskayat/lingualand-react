@@ -2,9 +2,7 @@ import React, { useState } from "react";
 
 import "./subscribe.css";
 
-import Popup from "../content/popup/popup";
-
-import subIll from "../ill/subscribe.svg";
+import Popup from "components/popup/popup";
 
 const Subscribe = () => {
   const [modalActive, setModalActive] = useState(false);
@@ -71,7 +69,6 @@ const Subscribe = () => {
         children={popupSub()}
         name={"Thanks"}
       />
-      <img src={subIll} alt="illustration" className="subIll"></img>
     </div>
   );
 };
