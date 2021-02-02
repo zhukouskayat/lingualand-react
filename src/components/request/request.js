@@ -39,7 +39,7 @@ const RequestCallBack = () => {
             placeholder="Phone number"
           ></input>
           <div className="reqButton">
-            <button type="submit" id="submitButtonRequest">
+            <button type="button" id="submitButtonRequest">
               Submit
             </button>
           </div>
