@@ -30,7 +30,7 @@
 /* fonts */
 
 .statistics span {
-  font-weight: var(--font-weight);
+  font-weight: var(--font-weight-p);
 }
 
 /* colors */

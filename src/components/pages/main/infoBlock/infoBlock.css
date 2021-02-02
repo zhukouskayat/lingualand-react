@@ -21,7 +21,10 @@
 
 .infoBlock p {
   font-size: var(--font-size-p-big);
-  font-weight: var(--font-weight-p);
+}
+
+.infoBlock>p {
+  font-weight: 400;
 }
 
 .text {
