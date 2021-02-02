@@ -5,12 +5,14 @@ import * as yup from "yup";
 import "./signUp.css";
 
 const SignUp = () => {
+
   const validationSchema = yup.object().shape({
     username: yup.string().typeError("Invalid data type").required("Username cannot be empty"),
     password: yup.string().typeError("Invalid data type").required("Password cannot be empty"),
     email: yup.string().email("Invalid data type").required("Email cannot be empty"),
     confirmPassword: yup.string().oneOf([yup.ref("password")], "Passwords do not match").required("Password cannot be empty"),
   });
+
   return (
     <div className="signUpContent">
       <h2>Create Account</h2>
@@ -110,6 +112,8 @@ const SignUp = () => {
           </div>
         )}
       </Formik>
+
+      <p className="signIn">Do you have an account? <span>Sign in</span></p>
     </div>
   );
 };

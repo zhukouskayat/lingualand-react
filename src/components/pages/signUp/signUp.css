@@ -1,6 +1,11 @@
+.signUpContent{
+  position: relative;
+  padding-bottom: 200px;
+}
+
 .signUpContent h2{
   text-align: center;
-  padding: 50px 0px 15px 0px;
+  padding: 50px 0px 5px 0px;
   font-size: var(--font-size-h2);
 }
 
@@ -13,7 +18,7 @@
 }
 
 .signUpForms {
-  width: 30%;
+  width: 460px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -21,7 +26,6 @@
 
 .signUpForms label {
   font-size: var(--font-size-p-big);
-  font-weight: var(--font-weight-p);
   margin-bottom: 15px;
   margin-top: 15px;
 }
@@ -32,14 +36,14 @@
 }
 
 .buttonLogin {
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: var(--font-size-button);
-  width: var(--button-width);
+  width: 460px;
   height: var(--button-height);
   border-radius: var(--button-border-radius);
   background-color: #2e1aaf;
   color: white;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .buttonLogin:hover {
@@ -50,4 +54,36 @@
   margin-top: 5px;
   font-size: var(--font-size-p-small);
   color: #ff4d37;
+}
+
+.signIn {
+  text-align: center;
+  font-size: var(--font-size-p-medium);
+}
+
+.signUpContent span {
+  color: #2e1aaf;
+  font-weight: var(--font-weight-p);
+}
+
+.signUpContent span:hover {
+  cursor: pointer;
+  color: #2e53bc;
+  font-weight: var(--font-weight-p);
+}
+
+.signUpIllLeft {
+  position: absolute;
+  left: 0px;
+  top: 14%;
+  width: 25%;
+  z-index: -1;
+}
+
+.signUpIllRight {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 33%;
+  z-index: -1;
 }
