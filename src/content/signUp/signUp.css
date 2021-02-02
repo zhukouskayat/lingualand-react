@@ -1,0 +1,53 @@
+.signUpContent h2{
+  text-align: center;
+  padding: 50px 0px 15px 0px;
+  font-size: var(--font-size-h2);
+}
+
+.loginInput {
+  width: 100%;
+  padding-left: 10px;
+  height: var(--button-height);
+  border: var(--form-border);
+  border-radius: var(--button-border-radius);
+}
+
+.signUpForms {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.signUpForms label {
+  font-size: var(--font-size-p-big);
+  font-weight: var(--font-weight-p);
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.buttonSignUp {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonLogin {
+  margin-top: 30px;
+  font-size: var(--font-size-button);
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: var(--button-border-radius);
+  background-color: #2e1aaf;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.buttonLogin:hover {
+  background-color: #2e53bc;
+}
+
+.error {
+  margin-top: 5px;
+  font-size: var(--font-size-p-small);
+  color: #ff4d37;
+}

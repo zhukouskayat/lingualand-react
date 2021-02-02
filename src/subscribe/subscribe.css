@@ -10,7 +10,7 @@
 
 .emailSub {
   padding-left: 10px;
-  width: 50%;
+  width: 40%;
   height: var(--button-height);
   border: var(--form-border);
   border-radius: var(--button-border-radius);
