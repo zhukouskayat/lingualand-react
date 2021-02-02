@@ -7,18 +7,18 @@ import Popup from "components/popup/popup";
 const Subscribe = () => {
   const [modalActive, setModalActive] = useState(false);
   const [email, setEmail] = useState("");
-  const [emailDirty, setEmailDirty] = useState(false);
-  const [emailError, setEmailError] = useState("Email cannot be empty");
+  const [emailError, setEmailError] = useState("");
   const [emailValid, setEmailValid] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (emailError !== "") {
-      setEmailValid(false);
+    if (emailError !== "" || email === "") {
+      setModalActive(false);
     } else {
       setEmailValid(true);
       setEmail("");
       setModalActive(true);
+      setEmailValid(false);
     }
   };
 
@@ -33,12 +33,6 @@ const Subscribe = () => {
     }
   };
 
-  const blurHandler = (e) => {
-    if (e.target.name === "email") {
-      setEmailDirty(true);
-    }
-  };
-
   const popupSub = () => {
     return <h3 className="popupSub">Thanks for your subscription!</h3>;
   };
@@ -50,16 +44,13 @@ const Subscribe = () => {
         <div className="subscribeForm">
           <input
             onChange={(e) => emailHandler(e)}
-            onBlur={(e) => blurHandler(e)}
             value={email}
             name="email"
             type="email"
             placeholder="Email..."
             className="emailSub"
           />
-          {emailDirty && emailError && (
-            <div className="subError">{emailError}</div>
-          )}
+          {emailError && <div className="subError">{emailError}</div>}
           <div>
             <button
               disabled={emailValid}
