@@ -1,16 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik } from "formik";
 import * as yup from "yup";
 
 import "./signUp.css";
+import Popup from "components/popup/popup";
 
 const SignUp = () => {
+  const [popupActive, setPopupActive] = useState(false);
+
+  const popupSignUp = () => {
+    return (
+      <div className="popupSignUp">
+        <h2>Thank you for registering!</h2>
+      </div>
+    );
+  };
 
   const validationSchema = yup.object().shape({
-    username: yup.string().typeError("Invalid data type").required("Username cannot be empty"),
-    password: yup.string().typeError("Invalid data type").required("Password cannot be empty"),
-    email: yup.string().email("Invalid data type").required("Email cannot be empty"),
-    confirmPassword: yup.string().oneOf([yup.ref("password")], "Passwords do not match").required("Password cannot be empty"),
+    username: yup
+      .string()
+      .typeError("Invalid data type")
+      .required("Username cannot be empty"),
+    password: yup
+      .string()
+      .typeError("Invalid data type")
+      .required("Password cannot be empty"),
+    email: yup
+      .string()
+      .email("Invalid data type")
+      .required("Email cannot be empty"),
+    confirmPassword: yup
+      .string()
+      .oneOf([yup.ref("password")], "Passwords do not match")
+      .required("Password cannot be empty"),
   });
 
   return (
@@ -26,6 +48,7 @@ const SignUp = () => {
         validateOnBlur
         onSubmit={(values) => {
           console.log(values);
+          setPopupActive(true);
         }}
         validationSchema={validationSchema}
       >
@@ -40,7 +63,6 @@ const SignUp = () => {
           dirty,
         }) => (
           <div className="signUpForms">
-
             <label>Username</label>
             <input
               className={"loginInput"}
@@ -96,9 +118,8 @@ const SignUp = () => {
             {touched.confirmPassword && errors.confirmPassword && (
               <p className="error">{errors.confirmPassword}</p>
             )}
-            
-            <div className="buttonSignUp">
 
+            <div className="buttonSignUp">
               <button
                 className="buttonLogin"
                 disabled={!isValid && !dirty}
@@ -107,13 +128,21 @@ const SignUp = () => {
               >
                 Submit
               </button>
-
             </div>
           </div>
         )}
       </Formik>
 
-      <p className="signIn">Do you have an account? <span>Sign in</span></p>
+      <Popup
+        active={popupActive}
+        setActive={setPopupActive}
+        children={popupSignUp()}
+        name={"Cancel"}
+      />
+
+      <p className="signIn">
+        Do you have an account? <span>Sign in</span>
+      </p>
     </div>
   );
 };
