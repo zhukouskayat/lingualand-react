@@ -8,6 +8,7 @@ import ContactUs from "components/pages/contactUs/contactUs";
 import SignUp from "components/pages/signUp/signUp";
 
 import { Route, Switch } from "react-router-dom";
+import RequestCallBack from "./request/request";
 
 const Pages = () => (
   <div id="pages">
@@ -25,6 +26,7 @@ const Pages = () => (
       <SignUp />
     </Route>
   </Switch>
+  <RequestCallBack />
   </div>
 );
 

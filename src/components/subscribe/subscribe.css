@@ -1,16 +1,23 @@
-.subscribe {
-  position: relative;
-  text-align: center;
+.subscribeForm {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.subscribeForm>div:last-child{
+  margin: auto;
 }
 
 .subscribe h2 {
+  text-align: center;
   padding: 50px 0px 30px 0px;
   font-size: var(--font-size-h2);
 }
 
 .emailSub {
   padding-left: 10px;
-  width: 40%;
+  width: 460px;
   height: var(--button-height);
   border: var(--form-border);
   border-radius: var(--button-border-radius);
@@ -38,7 +45,7 @@
 }
 
 .subError {
-  font-size: var(--font-size-p-medium);
-  color: #2e1aaf;
-  padding-top: 15px;
+  margin-top: 5px;
+  font-size: var(--font-size-p-small);
+  color: #ff4d37;
 }

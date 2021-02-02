@@ -20,7 +20,7 @@ const Subscribe = () => {
       setEmail("");
       setModalActive(true);
     }
-  }
+  };
 
   const emailHandler = (e) => {
     e.preventDefault();
@@ -47,20 +47,29 @@ const Subscribe = () => {
     <div className="subscribe">
       <h2>Subscribe!</h2>
       <form>
-        <input
-          onChange={(e) => emailHandler(e)}
-          onBlur={(e) => blurHandler(e)}
-          value={email}
-          name="email"
-          type="email"
-          placeholder="Email..."
-          className="emailSub"
-        />
-        {emailDirty && emailError && <div className="subError">{emailError}</div>}
-        <div>
-          <button disabled={emailValid} onClick={(e) => handleSubmit(e)} type="submit" className="buttonSub">
-            Subscribe
-          </button>
+        <div className="subscribeForm">
+          <input
+            onChange={(e) => emailHandler(e)}
+            onBlur={(e) => blurHandler(e)}
+            value={email}
+            name="email"
+            type="email"
+            placeholder="Email..."
+            className="emailSub"
+          />
+          {emailDirty && emailError && (
+            <div className="subError">{emailError}</div>
+          )}
+          <div>
+            <button
+              disabled={emailValid}
+              onClick={(e) => handleSubmit(e)}
+              type="submit"
+              className="buttonSub"
+            >
+              Subscribe
+            </button>
+          </div>
         </div>
       </form>
       <Popup
