@@ -1,0 +1,17 @@
+.location {
+  padding: 0px 150px;
+  background-color: #f2f2f8;
+}
+
+.location h3 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.location p {
+  font-size: var(--font-size-p-medium);
+}
+
+.location>p:last-child {
+  padding-bottom: 50px;
+}

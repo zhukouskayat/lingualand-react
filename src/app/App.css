@@ -3,6 +3,6 @@
 .infoBlock,
 .reviews,
 .subscribe,
-#contacts {
+.contacts {
   padding: var(--padding-body);
 }

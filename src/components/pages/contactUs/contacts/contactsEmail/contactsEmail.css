@@ -1,0 +1,22 @@
+.contactsEmail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.contactsEmail>div {
+  margin-bottom: 30px;
+}
+
+.contactsEmail>div>p {
+  font-size: var(--font-size-p-medium);
+}
+
+.contactsEmail>div>p:first-child {
+  font-weight: var(--font-weight-p);
+}
+
+.contactsEmail a {
+  text-decoration: none;
+  color: #2e1aaf;
+}
