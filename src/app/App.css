@@ -2,6 +2,7 @@
 #footer,
 .infoBlock,
 .reviews,
-.subscribe {
+.subscribe,
+#contacts {
   padding: var(--padding-body);
 }

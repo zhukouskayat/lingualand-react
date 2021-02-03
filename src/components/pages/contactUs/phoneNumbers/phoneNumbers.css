@@ -1,0 +1,19 @@
+.phoneNumbers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.phoneNumbers div{
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.phoneNumbers>div>p:first-child {
+font-weight: var(--font-weight-p);
+}
+
+.phoneNumbers p {
+  font-size: var(--font-size-p-medium);
+  }
