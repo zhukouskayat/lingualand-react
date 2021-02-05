@@ -1,20 +1,17 @@
 .location {
   position: relative;
-  padding: 0px 200px  150px 150px;
-  background-color: #f2f2f8;
 }
 
 .location h3 {
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 30px;
+  font-size: var(--font-size-h3);
 }
 
 .location p {
   font-size: var(--font-size-p-medium);
 }
 
-.map {
-position: absolute;
-right: 550px;
-top: 45px;
+.location p:last-child {
+  padding-bottom: 150px;
 }

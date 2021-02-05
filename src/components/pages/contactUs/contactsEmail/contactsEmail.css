@@ -1,11 +1,12 @@
 .contactsEmail {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 50px;
 }
 
 .contactsEmail>div {
   margin-bottom: 30px;
+  margin-right: 50px;
 }
 
 .contactsEmail>div>p {

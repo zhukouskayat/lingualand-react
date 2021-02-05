@@ -1,0 +1,13 @@
+.gm-style-mtc,
+.gm-svpc,
+.gm-style-cc {
+  visibility: hidden;
+}
+
+.map {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 400px;
+  height: 300px;
+  }

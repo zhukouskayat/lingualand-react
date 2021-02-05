@@ -1,0 +1,20 @@
+.contacts > h2 {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight);
+}
+
+.contacts > p {
+  font-size: var(--font-size-p-medium);
+}
+
+.contacts > p:last-child {
+  margin-bottom: 50px;
+}
+
+.contacts > h3 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: var(--font-size-h3);
+}
