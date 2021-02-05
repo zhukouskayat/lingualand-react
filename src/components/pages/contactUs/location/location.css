@@ -1,10 +1,11 @@
 .location {
-  padding: 0px 150px;
+  position: relative;
+  padding: 0px 200px  150px 150px;
   background-color: #f2f2f8;
 }
 
 .location h3 {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 30px;
 }
 
@@ -12,6 +13,8 @@
   font-size: var(--font-size-p-medium);
 }
 
-.location>p:last-child {
-  padding-bottom: 50px;
+.map {
+position: absolute;
+right: 550px;
+top: 45px;
 }
