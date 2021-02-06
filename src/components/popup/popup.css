@@ -33,7 +33,7 @@
 
 .popup button {
   font-size: var(--font-size-button);
-  width: var(--button-width);
+  width: 100%;
   height: var(--button-height);
   border-radius: var(--button-border-radius);
   background-color: #6986fc;
@@ -49,4 +49,12 @@
 
 .popup button:hover {
   background-color: #2e53bc;
+}
+
+.buttonP {
+  width: 100%;
+}
+
+.popupButton > form {
+  width: 100%;
 }

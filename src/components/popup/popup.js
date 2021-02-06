@@ -9,7 +9,7 @@ const Popup = ({ active, setActive, children, name }) => {
         {children}
         <div className="popupButton">
         <form>
-          <button type="button" onClick={() => setActive(false)}>
+          <button className="buttonP" type="button" onClick={() => setActive(false)}>
             {name}
           </button>
         </form>
