@@ -3,6 +3,7 @@
 .infoBlock,
 .reviews,
 .subscribe,
-.contacts {
+.contacts,
+#languageCourses {
   padding: var(--padding-body);
 }
