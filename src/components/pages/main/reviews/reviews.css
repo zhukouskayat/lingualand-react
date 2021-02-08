@@ -1,3 +1,5 @@
+/* geometry */
+
 .reviews {
   position: relative;
   padding-top: 50px;
@@ -5,12 +7,7 @@
 }
 
 .reviews h2{
-  font-size: var(--font-size-h2);
   padding-bottom: 30px;
-}
-
-.reviews {
-  background-color: var(--background-color);
 }
 
 .revIll {
@@ -18,4 +15,40 @@
   left: 0;
   top: 40%;
   width: 150px;
+}
+
+/* colors */
+
+.reviews {
+  background-color: var(--background-color);
+}
+
+/* fonts */
+
+.reviews h2{
+  font-size: var(--font-size-h2);
+}
+
+/* media */
+
+@media screen and (max-width: 800px) {
+  .revIll {
+    top: 52%;
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .reviews {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .revIll {
+    display: none;
+  }
+
+  .reviews h2{
+    font-size: var(--font-size-h2-m);
+  }
 }

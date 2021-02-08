@@ -113,7 +113,7 @@ const SignUp = () => {
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.confirmPassword}
-              placeholder="Enter confirm password"
+              placeholder="Сonfirm password"
             />
             {touched.confirmPassword && errors.confirmPassword && (
               <p className="error">{errors.confirmPassword}</p>

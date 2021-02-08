@@ -1,4 +1,10 @@
 /* Geometry */
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
 #header ul {
   display: flex;
   width: 100%;
@@ -93,6 +99,11 @@
 
   .faUser {
     font-size: var(--font-size-p-medium-m);
+  }
+
+  #header {
+    position: static;
+    z-index: 0;
   }
 }
 

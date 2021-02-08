@@ -1,12 +1,8 @@
+/* geometry */
+
 .contacts > h2 {
   margin-top: 50px;
   padding-bottom: 50px;
-  font-size: var(--font-size-h2);
-  font-weight: var(--font-weight);
-}
-
-.contacts > p {
-  font-size: var(--font-size-p-medium);
 }
 
 .contacts > p:last-child {
@@ -16,5 +12,41 @@
 .contacts > h3 {
   margin-top: 0px;
   margin-bottom: 30px;
+}
+
+/* fonts */
+
+.contacts > h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight);
+}
+
+.contacts > p {
+  font-size: var(--font-size-p-medium);
+}
+
+.contacts > h3 {
   font-size: var(--font-size-h3);
+}
+
+/* media */
+
+@media screen and (max-width: 600px) {
+  .contacts > h2 {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-size: var(--font-size-h2-m);
+  }
+
+  .contacts > p {
+    font-size: var(--font-size-p-medium-m);
+  }
+  
+  .contacts > h3 {
+    font-size: var(--font-size-h3-m);
+  }
+
+  .contacts > p:last-child {
+    margin-bottom: 30px;
+  }
 }

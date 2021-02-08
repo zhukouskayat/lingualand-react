@@ -54,3 +54,17 @@ color: #18b485;
 .faGlobe {
   color: #2e1aaf;
 }
+
+/* media */
+
+@media screen and (max-width: 600px) {
+  .statistics {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .text-col1,
+.text-col2 {
+  width: 100%;
+}
+}

@@ -1,3 +1,5 @@
+/* geometry */
+
 .location {
   position: relative;
 }
@@ -5,13 +7,59 @@
 .location h3 {
   padding-top: 60px;
   padding-bottom: 30px;
-  font-size: var(--font-size-h3);
 }
+
+.location p:last-child {
+  padding-bottom: 150px;
+}
+
+/* fonts */
 
 .location p {
   font-size: var(--font-size-p-medium);
 }
 
-.location p:last-child {
-  padding-bottom: 150px;
+.location h3 {
+  font-size: var(--font-size-h3);
+}
+
+/* media */
+
+@media screen and (max-width: 1000px) {
+  .location h3 {
+    padding-top: 60px;
+  }
+
+  .location {
+    height: 470px;
+  }
+
+  .location h3 {
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  
+  .location p:last-child {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .location p {
+    font-size: var(--font-size-p-medium-m);
+  }
+  
+  .location h3 {
+    font-size: var(--font-size-h3-m);
+  }
+
+  .location {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .location {
+    height: 470px;
+  }
 }

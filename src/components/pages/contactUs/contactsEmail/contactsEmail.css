@@ -1,6 +1,9 @@
+/* geometry */
+
 .contactsEmail {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
@@ -8,6 +11,14 @@
   margin-bottom: 30px;
   margin-right: 50px;
 }
+
+/* colors */
+
+.contactsEmail a {
+  color: #2e1aaf;
+}
+
+/* fonts */
 
 .contactsEmail>div>p {
   font-size: var(--font-size-p-medium);
@@ -19,5 +30,22 @@
 
 .contactsEmail a {
   text-decoration: none;
-  color: #2e1aaf;
+}
+
+/* media */
+
+@media screen and (max-width: 1000px) {
+  .contactsEmail {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactsEmail {
+    margin-bottom: 0px;
+  }
+
+  .contactsEmail>div>p {
+    font-size: var(--font-size-p-medium-m);
+  }
 }

@@ -1,3 +1,5 @@
+/* geometry */
+
 .gm-style-mtc,
 .gm-svpc,
 .gm-style-cc {
@@ -10,4 +12,34 @@
   top: 0px;
   width: 400px;
   height: 300px;
+  }
+
+  /* mrdia */
+
+  @media screen and (max-width: 1200px) {
+    .map {
+      width: 350px;
+      height: 300px;
+      }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .map {
+      position: absolute;
+      top: 180px;
+      width: 100%;
+      height: 250px;
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+    .map {
+      top: 150px;
+      }
+  }
+
+  @media screen and (max-width: 450px) {
+    .map {
+      top: 180px;
+      }
   }

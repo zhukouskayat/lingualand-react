@@ -1,12 +1,12 @@
+/* geometry */
+
 .signUpContent{
   position: relative;
   padding-bottom: 200px;
 }
 
 .signUpContent>h2{
-  text-align: center;
   padding: 50px 0px 5px 0px;
-  font-size: var(--font-size-h2);
 }
 
 .loginInput {
@@ -25,7 +25,6 @@
 }
 
 .signUpForms label {
-  font-size: var(--font-size-p-big);
   margin-bottom: 15px;
   margin-top: 15px;
 }
@@ -37,39 +36,14 @@
 
 .buttonLogin {
   margin-top: 40px;
-  font-size: var(--font-size-button);
+  margin-bottom: 40px;
   width: 460px;
   height: var(--button-height);
   border-radius: var(--button-border-radius);
-  background-color: #2e1aaf;
-  color: white;
-  margin-bottom: 40px;
-}
-
-.buttonLogin:hover {
-  background-color: #2e53bc;
 }
 
 .error {
   margin-top: 5px;
-  font-size: var(--font-size-p-small);
-  color: #ff4d37;
-}
-
-.signIn {
-  text-align: center;
-  font-size: var(--font-size-p-medium);
-}
-
-.signUpContent span {
-  color: #2e1aaf;
-  font-weight: var(--font-weight-p);
-}
-
-.signUpContent span:hover {
-  cursor: pointer;
-  color: #2e53bc;
-  font-weight: var(--font-weight-p);
 }
 
 .signUpIllLeft {
@@ -89,7 +63,108 @@
 }
 
 .popupSignUp>h2 {
-  text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+/* colors */
+
+.buttonLogin {
+  background-color: #2e1aaf;
+  color: white;
+}
+
+.buttonLogin:hover {
+  background-color: #2e53bc;
+}
+
+.error {
+  color: #ff4d37;
+}
+
+.signUpContent span {
+  color: #2e1aaf;
+}
+
+.signUpContent span:hover {
+  cursor: pointer;
+  color: #2e53bc;
+}
+
+
+/* fonts */
+
+.signUpContent>h2{
+  text-align: center;
+  font-size: var(--font-size-h2);
+}
+
+.signUpForms label {
+  font-size: var(--font-size-p-big);
+}
+
+.buttonLogin {
+  font-size: var(--font-size-button);
+}
+
+.error {
+  font-size: var(--font-size-p-small);
+}
+
+.signIn {
+  text-align: center;
+  font-size: var(--font-size-p-medium);
+}
+
+.signUpContent span {
+  font-weight: var(--font-weight-p);
+}
+
+.signUpContent span:hover {
+  font-weight: var(--font-weight-p);
+}
+
+/* media */
+
+@media screen and (max-width: 1200px) {
+  .signUpContent{
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .signUpForms {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .signUpContent{
+    padding-bottom: 50px;
+  }
+
+  .signUpContent>h2{
+    padding: 30px 0px 0px 0px;
+    font-size: var(--font-size-h2-m);
+  }
+  
+  .signUpForms label {
+    font-size: var(--font-size-p-big-m);
+  }
+  
+  .buttonLogin {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: var(--font-size-button-m);
+  }
+  
+  .error {
+    font-size: var(--font-size-p-small-m);
+  }
+  
+  .signIn {
+    font-size: var(--font-size-p-medium-m);
+  }
+
 }

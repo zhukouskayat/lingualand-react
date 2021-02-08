@@ -4,7 +4,8 @@
 .reviews,
 .subscribe,
 .contacts,
-#languageCourses {
+#languageCourses,
+.signUpContent {
   padding: var(--padding-body);
 }
 
@@ -15,7 +16,8 @@
 .reviews,
 .subscribe,
 .contacts,
-#languageCourses {
+#languageCourses,
+.signUpContent {
   padding: 0px 200px;
 }
 }
@@ -27,7 +29,8 @@
 .reviews,
 .subscribe,
 .contacts,
-#languageCourses {
+#languageCourses,
+.signUpContent  {
   padding: 0px 100px;
 }
 }
@@ -39,7 +42,8 @@
 .reviews,
 .subscribe,
 .contacts,
-#languageCourses {
+#languageCourses,
+.signUpContent  {
   padding: 0px 50px;
 }
 }
