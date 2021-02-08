@@ -18,17 +18,17 @@ const Header = () => (
         </NavLink>
       </li>
       <li>
-        <NavLink exact to="/courses" className="courses">
+        <NavLink to="/courses" className="courses">
           Language courses
         </NavLink>
       </li>
       <li className="c-geometry">
-        <NavLink exact to="/contacts" className="contact">
+        <NavLink to="/contacts" className="contact">
           Contact us
         </NavLink>
       </li>
       <li className="s-geometry">
-        <NavLink exact to="/login" className="signUp">
+        <NavLink to="/login" className="signUp">
           Sign up
           <FontAwesomeIcon icon={faUser} className="faUser" />
         </NavLink>

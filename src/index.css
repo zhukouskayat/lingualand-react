@@ -39,9 +39,14 @@ time, mark, audio, video {
   --font-weight: 600;
   --font-weight-p: 500;
 /* colors */
-  --font-input-color: #C7C7C7;
   --background-color: #f2f2f8;
-  --font-button-color: white;
-  --background-button-color: #68BDD1;
-  --background-hover-button-color: #0E98AF;
+
+  /* media */
+  --font-size-h1-m: 30px;
+  --font-size-h2-m: 24px;
+  --font-size-h3-m: 20px;
+  --font-size-button-m: 16px;
+  --font-size-p-big-m: 18px;
+  --font-size-p-medium-m: 14px;
+  --font-size-p-small-m: 12px;
 }

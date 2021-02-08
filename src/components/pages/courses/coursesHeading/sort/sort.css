@@ -13,7 +13,7 @@
   padding-right: 5px;
 }
 
-.sort span:last-child {
+.sortActiveLabel {
   font-weight: var(--font-weight-p);
   color: #2e1aaf;
   cursor: pointer;
@@ -44,7 +44,7 @@
   cursor: pointer;
 }
 
-.sortPopup.active li {
+.sortPopup li.active {
   font-weight: var(--font-weight-p);
   color: #2e1aaf;
 }
@@ -53,4 +53,17 @@
   color: #2e1aaf;
   cursor: pointer;
   font-weight: var(--font-weight-p);
+}
+
+.faAngleDown {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: var(--font-size-p-medium);
+}
+
+.faAngleDownRotated {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: var(--font-size-p-medium);
+  transform: rotate(180deg);
 }

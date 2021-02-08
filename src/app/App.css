@@ -7,3 +7,39 @@
 #languageCourses {
   padding: var(--padding-body);
 }
+
+@media screen and (min-width: 1500px) {
+  #header,
+#footer,
+.infoBlock,
+.reviews,
+.subscribe,
+.contacts,
+#languageCourses {
+  padding: 0px 200px;
+}
+}
+
+@media screen and (max-width: 1200px) {
+  #header,
+#footer,
+.infoBlock,
+.reviews,
+.subscribe,
+.contacts,
+#languageCourses {
+  padding: 0px 100px;
+}
+}
+
+@media screen and (max-width: 800px) {
+  #header,
+#footer,
+.infoBlock,
+.reviews,
+.subscribe,
+.contacts,
+#languageCourses {
+  padding: 0px 50px;
+}
+}

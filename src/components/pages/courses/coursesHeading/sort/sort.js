@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import "./sort.css";
 
 function Sort({ items }) {
@@ -31,7 +34,14 @@ function Sort({ items }) {
     <div ref={sortRef} className="sort">
       <div className="sortLabel">
         <span className="sortBy">Sort by:</span>
-        <span onClick={toggleVisiblePopup}>{activeLabel}</span>
+        <span onClick={toggleVisiblePopup} className="sortActiveLabel">
+          {activeLabel}
+        </span>
+        <FontAwesomeIcon
+          icon={faAngleDown}
+          onClick={toggleVisiblePopup}
+          className={visiblePopup ? "faAngleDownRotated" : "faAngleDown"}
+        />
       </div>
       {visiblePopup && (
         <div className="sortPopup">

@@ -1,7 +1,11 @@
-/* geometry */
+/* Geometry */
 
 .requestButton {
   background: transparent;
+}
+
+.popupReq {
+  padding: 15px 30px 30px 30px;
 }
 
 .icon, .requestButton {
@@ -27,7 +31,6 @@
 
 #submitButtonRequest {
   margin: 30px 0px 15px 0px;
-  background-color: #2e1aaf;
 }
 
 .reqInput {
@@ -41,5 +44,59 @@
 
 #submitButtonRequest:hover {
   cursor: pointer;
+}
+
+/* Colors */
+
+#submitButtonRequest {
+  background-color: #2e1aaf;
+}
+
+#submitButtonRequest:hover {
   background-color: #2e53bc;
+}
+
+/* Fonts */
+
+.popupReq {
+  text-align: center;
+  font-size: var(--font-size-h3);
+}
+
+/* Media */
+
+@media screen and (max-width: 1000px) {
+  .icon, .requestButton {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .icon:hover {
+    width: 92px;
+    height: 92px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .icon, .requestButton {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .icon:hover {
+    cursor: pointer;
+    width: 72px;
+    height: 72px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .popupReq {
+    padding: 5px 0px 30px 0px;
+    font-size: var(--font-size-h3-m);
+  }
+
+  #submitButtonRequest {
+    margin: 15px 0px 15px 0px;
+  }
 }

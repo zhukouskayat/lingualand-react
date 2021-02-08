@@ -1,8 +1,10 @@
+/* Geometry */
+
 .subscribeForm {
-  width: 460px;
   display: flex;
   flex-direction: column;
   margin: auto;
+  width: 460px;
 }
 
 .subscribeForm>div:last-child{
@@ -10,9 +12,7 @@
 }
 
 .subscribe h2 {
-  text-align: center;
   padding: 50px 0px 30px 0px;
-  font-size: var(--font-size-h2);
 }
 
 .emailSub {
@@ -25,27 +25,94 @@
 
 .buttonSub {
   margin-top: 30px;
-  font-size: var(--font-size-button);
   width: var(--button-width);
   height: var(--button-height);
   border-radius: var(--button-border-radius);
+  margin-bottom: 50px;
+}
+
+.popupSub {
+  padding: 30px 30px 50px 30px;
+}
+
+.subError {
+  margin-top: 5px;
+}
+
+/* Colors */
+
+.buttonSub {
   background-color: #2e1aaf;
   color: white;
-  margin-bottom: 50px;
 }
 
 .buttonSub:hover {
   background-color: #2e53bc;
 }
 
-.popupSub {
-  padding: 30px 30px 50px 30px;
+.buttonSub {
+  background-color: #2e1aaf;
+  color: white;
+}
+
+.subError {
+  color: #ff4d37;
+}
+
+/* Fonts */
+
+.subscribe h2 {
+  text-align: center;
   font-size: var(--font-size-h2);
+}
+
+.buttonSub {
+  font-size: var(--font-size-button);
+}
+
+.popupSub {
+  font-size: var(--font-size-h3);
   text-align: center;
 }
 
 .subError {
-  margin-top: 5px;
   font-size: var(--font-size-p-small);
-  color: #ff4d37;
+}
+
+/* Media */
+
+@media screen and (max-width: 600px) {
+
+  .subscribeForm {
+    width: 100%;
+  }
+
+  .emailSub {
+    padding-left: 10px;
+    width: 100%;
+  }
+
+  .buttonSub {
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: var(--font-size-button-m);
+  }
+
+  .subscribeForm>div:last-child{
+    margin: 0px;
+  }
+
+  .subscribe h2 {
+    padding: 30px 0px 30px 0px;
+    font-size: var(--font-size-h2-m);
+  }
+  
+  .popupSub {
+    padding: 5px 0px 30px 0px;
+    font-size: var(--font-size-h3-m);
+  }
+  
+  .subError {
+    font-size: var(--font-size-p-small-m);
+  }
 }

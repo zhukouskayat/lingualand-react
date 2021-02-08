@@ -1,6 +1,7 @@
 /* Geometry */
 #header ul {
   display: flex;
+  width: 100%;
   align-items: center;
 }
 
@@ -16,6 +17,10 @@
   margin: 10px 30px 10px 0px;
   width: 50px;
   height: 45px;
+}
+
+.courses {
+  margin-right: 30px;
 }
 
 .c-geometry {
@@ -75,4 +80,43 @@
 .courses.active:hover {
   font-weight: 600;
   color: #adb9e2;
+}
+
+/* Media */
+
+@media screen and (max-width: 600px) {
+  .contact,
+  .signUp,
+  .courses{
+    font-size: var(--font-size-p-medium-m);
+  }
+
+  .faUser {
+    font-size: var(--font-size-p-medium-m);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .logo {
+    margin: 10px 0px;
+    width: 40px;
+    height: 35px;
+  }
+
+  #header ul {
+    flex-direction: column;
+  }
+
+  .c-geometry {
+    margin: 0px;
+    justify-content: center;
+  }
+
+  .courses {
+    margin-right: 0px;
+  }
+
+  .s-geometry {
+    padding-bottom: 10px;
+  }
 }
