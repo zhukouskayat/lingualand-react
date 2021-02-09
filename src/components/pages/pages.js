@@ -9,6 +9,7 @@ import SignUp from "components/pages/signUp/signUp";
 
 import { Route, Switch } from "react-router-dom";
 import RequestCallBack from "components/request/request";
+import Course from "./courses/coursesDetails/courseDetails";
 
 const Pages = () => (
   <div id="pages">

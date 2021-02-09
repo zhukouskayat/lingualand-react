@@ -1,7 +1,5 @@
 .buttonItem {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  align-items: flex-end;
   width: var(--button-width);
   height: var(--button-height);
   border-radius: var(--button-border-radius);
@@ -16,15 +14,18 @@
   background-color: #2e53bc;
 }
 
+@media screen and (max-width: 900px) {
+
+
+}
+
 @media screen and (max-width: 700px) {
 
-  .buttonItem {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 600px) {
   .buttonItem {
     font-size: var(--font-size-button-m);
+    width: 100%;
   }
 }

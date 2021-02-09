@@ -28,7 +28,7 @@ body {
 :root {
 /* geometry */
   --padding-body: 0px 150px;
-  --button-width: 263px;
+  --button-width: 264px;
   --button-height: 45px;
   --button-border-radius: 25px;
   --form-border: 2px solid #2e1aaf;

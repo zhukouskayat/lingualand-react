@@ -1,21 +1,19 @@
 import React from "react";
 import CoursesButton from "../coursesButton/coursesButton";
 
+import { Link } from "react-router-dom";
+
 import "./schoolsItem.css";
 
-const SchoolsItem = ({name, location, language, price, weeks}) => (
-  <div className="schoolsItem">
-    <div className="itemLeft">
-      <h3>{name}</h3>
-      <p>{location}</p>
-      <p className="itemLang">{language}</p>
+function SchoolsItem ({id, name, location, price}){
+  return(
+    <div className="schoolsItem">
+        <h3>{name}</h3>
+        <p>{location}</p>
+        <h3 className="price">From {price}$</h3>
+        <Link to={`/course/${id}`}><CoursesButton /></Link>
     </div>
-    <div className="itemRight">
-      <h3>From {price}$</h3>
-      <p>For {weeks}</p>
-    </div>
-    <CoursesButton />
-  </div>
-);
+  );
+} 
 
 export default SchoolsItem;

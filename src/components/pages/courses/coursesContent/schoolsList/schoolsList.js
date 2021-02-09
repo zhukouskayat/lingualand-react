@@ -15,9 +15,9 @@ function SchoolList () {
   console.log(schools);
 
   return(
-    <div className="schoolList">
+    <div className="schoolsList">
     {
-      schools.map(obj => <SchoolsItem key={obj.id} {...obj} /> )
+      schools.map(schools => <SchoolsItem key={schools.id} {...schools} /> )
     }
     </div>
   );

@@ -1,124 +1,88 @@
 {
   "schools": [
     {
-      "id": "twin_english_centre_london",
-      "name": "Twin English Centre London",
+      "id": "twin_english_centre",
+      "name": "Twin English Centre",
       "location": "London, United Kingdom",
-      "language": "English",
-      "price": 457,
-      "weeks": "2 weeks"
+      "price": 457
     },
     {
-      "id": "don_quijote_buenos_aires",
-      "name": "Don Quijote Buenos Aires",
+      "id": "don_quijote",
+      "name": "Don Quijote",
       "location": "Buenos Aires, Argentina",
-      "language": "Spanish",
-      "price": 661,
-      "weeks": "2 weeks"
+      "price": 661
     },
     {
       "id": "es_dubai",
       "name": "ES Dubai",
-      "location": "Dubai, United Arab Emirates",
-      "language": "English",
-      "price": 901,
-      "weeks": "2 weeks"
+      "location": "Dubai, UAE",
+      "price": 901
     },
     {
       "id": "ilsc_vancouver",
       "name": "ILSC Vancouver",
       "location": "Vancouver, Canada",
-      "language": "English",
-      "price": 848,
-      "weeks": "2 weeks"
+      "price": 848
     },
     {
       "id": "kings_brighton",
       "name": "Kings Brighton",
       "location": "Brighton, United Kingdom",
-      "language": "English",
-      "price": 1147,
-      "weeks": "2 weeks"
+      "price": 1147
     },
     {
       "id": "ces_edinburgh",
       "name": "CES Edinburgh",
       "location": "Brighton, United Kingdom",
-      "language": "English",
-      "price": 1010,
-      "weeks": "2 weeks"
+      "price": 1010
     },
     {
       "id": "linguaschools_barcelona",
       "name": "Linguaschools Barcelona",
       "location": "Barcelona, Spain",
-      "language": "Spanish",
-      "price": 523,
-      "weeks": "2 weeks"
+      "price": 523
     },
     {
-      "id": "academia_contacto_alicante",
-      "name": "Academia Contacto Alicante",
+      "id": "academia_contacto",
+      "name": "Academia Contacto",
       "location": "Alicante, Spain",
-      "language": "Spanish",
-      "price": 460,
-      "weeks": "2 weeks"
-    },
-    {
-      "id": "don_quijote_costa_rica",
-      "name": "Don Quijote Costa Rica",
-      "location": "Santo Domingo de Heredia, Costa Rica",
-      "language": "Spanish",
-      "price": 792,
-      "weeks": "2 weeks"
+      "price": 460
     },
     {
       "id": "actiLingua_academy",
       "name": "ActiLingua Academy",
       "location": "Vienna, Austria",
-      "language": "German",
-      "price": 689,
-      "weeks": "2 weeks"
+      "price": 689
     },
     {
       "id": "Don_quijote_sosua",
       "name": "Don Quijote Sosua",
       "location": "Sosua, Dominican Republic",
-      "language": "Spanish",
-      "price": 661,
-      "weeks": "2 weeks"
+      "price": 661
     },
     {
       "id": "sprachcaffe_frankfurt",
       "name": "Sprachcaffe Frankfurt",
       "location": "Frankfurt, Germany",
-      "language": "German",
-      "price": 950,
-      "weeks": "2 weeks"
+      "price": 950
     },
     {
-      "id": "bws_germanlingua_berlin",
-      "name": "BWS Germanlingua Berlin",
+      "id": "bws_germanlingua",
+      "name": "BWS Germanlingua",
       "location": "Berlin, Germany",
-      "language": "German",
-      "price": 851,
-      "weeks": "2 weeks"
+      "price": 851
     },
     {
       "id": "alpadia_berlin",
       "name": "Alpadia Berlin",
       "location": "Berlin, Germany",
-      "language": "German",
-      "price": 790,
-      "weeks": "2 weeks"
+      "price": 790
     },
     {
       "id": "lsi_zurich",
       "name": "LSI Zurich",
       "location": "Zurich, Switzerland",
-      "language": "German",
-      "price": 1581,
-      "weeks": "2 weeks"
+      "price": 1581
     }
   ],
   "user": [],
