@@ -11,27 +11,25 @@ function Filter({ items }) {
   };
 
   return (
-    <div>
-      <form className="filter">
-        <button
-          type="button"
-          className={activeItem === null ? "activeFilter" : "filterItem"}
-          onClick={(event) => handleSelect(null, event)}
-        >
-          All
-        </button>
-        {items &&
-          items.map((name, i) => (
-            <button
-              key={`${i}_${name}`}
-              className={activeItem === i ? "activeFilter" : "filterItem"}
-              onClick={(event) => handleSelect(i, event)}
-            >
-              {name}
-            </button>
-          ))}
-      </form>
-    </div>
+    <form className="filter">
+      <button
+        type="button"
+        className={activeItem === null ? "activeFilter" : "filterItem"}
+        onClick={(event) => handleSelect(null, event)}
+      >
+        All
+      </button>
+      {items &&
+        items.map((name, i) => (
+          <button
+            key={`${i}_${name}`}
+            className={activeItem === i ? "activeFilter" : "filterItem"}
+            onClick={(event) => handleSelect(i, event)}
+          >
+            {name}
+          </button>
+        ))}
+    </form>
   );
 }
 

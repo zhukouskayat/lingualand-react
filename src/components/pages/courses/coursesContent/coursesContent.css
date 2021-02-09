@@ -18,3 +18,22 @@
   font-size: var(--font-size-h3);
   margin: 30px 0px 20px 0px;
 }
+
+@media screen and (max-width: 1000px) {
+
+  .coursesContent {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contentFiler{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contentFiler h3 {
+    font-size: var(--font-size-h3-m);
+  }
+}

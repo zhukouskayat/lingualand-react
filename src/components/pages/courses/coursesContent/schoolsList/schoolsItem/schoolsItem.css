@@ -1,0 +1,89 @@
+/* geometry */
+
+.schoolsItem {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+  display: flex;
+  border-radius: var(--button-border-radius);
+  margin-bottom: 30px;
+}
+
+.itemLeft {
+  padding-right: 250px;
+}
+
+.itemRight {
+  position: absolute;
+  right: 140px;
+}
+
+.itemLang {
+  padding-top: 50px;
+}
+
+/* colors */
+
+.schoolsItem {
+  background-color: white;
+}
+
+/* fonts */
+
+.schoolsItem h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight);
+}
+
+.itemLang {
+  font-weight: var(--font-weight-p);
+}
+
+.schoolsItem p {
+  font-size: var(--font-size-p-big);
+}
+
+/* media */
+
+@media screen and (max-width: 1200px) {
+  .itemLang {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .schoolsItem {
+    flex-direction: column;
+  }
+
+  .itemLeft {
+    padding-right: 0px;
+  }
+  
+  .itemRight {
+    position: static;
+    margin-bottom: 40px;
+  }
+
+  .itemLang {
+    padding: 5px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .schoolsItem h3 {
+    font-size: var(--font-size-h3-m);
+  }
+  
+  .itemLang {
+    font-weight: var(--font-weight-p-m);
+  }
+  
+  .schoolsItem p {
+    font-size: var(--font-size-p-big-m);
+  }
+}

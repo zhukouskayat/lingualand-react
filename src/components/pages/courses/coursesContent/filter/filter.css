@@ -1,3 +1,5 @@
+/* geometry */
+
 .filter {
   display: flex;
   flex-direction: column;
@@ -5,14 +7,28 @@
 }
 
 .filterItem {
+  width: var(--button-width);
   height: var(--button-height);
-  border: 2px solid #feb832;
   border-radius: var(--button-border-radius);
-  background-color: white;
   margin-bottom: 20px;
   cursor: pointer;
   transition: background-color 0.1s ease-in-out;
-  font-size: var(--font-size-button);
+}
+
+.activeFilter {
+  width: var(--button-width);
+  height: var(--button-height);
+  border: 0px;
+  border-radius: var(--button-border-radius);
+  margin-bottom: 20px;
+  transition: background-color 0.1s ease-in-out;
+}
+
+/* colors */
+
+.filterItem {
+  border: 2px solid #feb832;
+  background-color: white;
 }
 
 .filterItem:hover,
@@ -23,13 +39,43 @@
 }
 
 .activeFilter {
-  font-size: var(--font-size-button);
-  height: var(--button-height);
-  border: 2px solid #feb832;
-  border-radius: var(--button-border-radius);
-  margin-bottom: 20px;
   cursor: pointer;
-  transition: background-color 0.1s ease-in-out;
   background-color: #feb832;
   color: white;
+}
+
+/* fonts */
+
+.activeFilter,
+.filterItem {
+  font-size: var(--font-size-button);
+}
+
+/* media */
+
+@media screen and (max-width: 1000px) {
+  .filter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .filterItem,
+  .activeFilter {
+    width: 100%;
+  }
+
+  .sortPopup {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .filterItem,
+  .activeFilter {
+    font-size: var(--font-size-button-m);
+  }
 }

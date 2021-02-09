@@ -1,5 +1,8 @@
+/* geometry */
+
 .sort {
   position: relative;
+  z-index: 1;
 }
 
 .sortLabel {
@@ -9,18 +12,7 @@
 }
 
 .sortBy {
-  font-weight: var(--font-weight-p);
   padding-right: 5px;
-}
-
-.sortActiveLabel {
-  font-weight: var(--font-weight-p);
-  color: #2e1aaf;
-  cursor: pointer;
-}
-
-.sort span {
-  font-size: var(--font-size-p-medium);
 }
 
 .sortPopup {
@@ -28,7 +20,6 @@
   position: absolute;
   right: 0;
   margin-top: 15px;
-  background: #ffffff;
   border-radius: 25px;
   padding: 10px 0;
   width: 200px;
@@ -39,31 +30,65 @@
 }
 
 .sortPopup li {
-  font-size: var(--font-size-p-medium);
   padding: 12px 20px;
   cursor: pointer;
 }
 
+.faAngleDown {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.faAngleDownRotated {
+  cursor: pointer;
+  margin-left: 10px;
+  transform: rotate(180deg);
+}
+
+/* colors */
+
+.sortActiveLabel {
+  color: #2e1aaf;
+  cursor: pointer;
+}
+
+.sortPopup {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: #ffffff;
+}
+
 .sortPopup li.active {
-  font-weight: var(--font-weight-p);
   color: #2e1aaf;
 }
 
 .sortPopup li:hover {
   color: #2e1aaf;
   cursor: pointer;
+}
+
+/* fonts */
+
+.sortBy,
+.sortActiveLabel,
+.sortPopup li.active,
+.sortPopup li:hover {
   font-weight: var(--font-weight-p);
 }
 
-.faAngleDown {
-  cursor: pointer;
-  margin-left: 10px;
+.sort span,
+.sortPopup li,
+.faAngleDown,
+.faAngleDownRotated {
   font-size: var(--font-size-p-medium);
 }
 
-.faAngleDownRotated {
-  cursor: pointer;
-  margin-left: 10px;
-  font-size: var(--font-size-p-medium);
-  transform: rotate(180deg);
+/* media */
+
+@media screen and (max-width: 600px) {
+  .sort span,
+  .sortPopup li,
+  .faAngleDown,
+  .faAngleDownRotated {
+    font-size: var(--font-size-p-medium-m);
+  }
 }
