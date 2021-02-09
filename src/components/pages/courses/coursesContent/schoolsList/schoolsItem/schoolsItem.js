@@ -3,16 +3,16 @@ import CoursesButton from "../coursesButton/coursesButton";
 
 import "./schoolsItem.css";
 
-const SchoolsItem = () => (
+const SchoolsItem = ({name, location, language, price, weeks}) => (
   <div className="schoolsItem">
     <div className="itemLeft">
-      <h3>International House London</h3>
-      <p>London, UK</p>
-      <p className="itemLang">English</p>
+      <h3>{name}</h3>
+      <p>{location}</p>
+      <p className="itemLang">{language}</p>
     </div>
     <div className="itemRight">
-      <h3>From 499$</h3>
-      <p>For 2 weeks</p>
+      <h3>From {price}$</h3>
+      <p>For {weeks}</p>
     </div>
     <CoursesButton />
   </div>

@@ -1,3 +1,10 @@
 .schoolList {
   width: 100%;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .schoolList {
+    margin-bottom: 10px;
+  }
 }
