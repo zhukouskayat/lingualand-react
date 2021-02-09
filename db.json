@@ -1,0 +1,166 @@
+{
+  "schools": [
+    {
+      "id": "twin_english_centre_london",
+      "name": "Twin English Centre London",
+      "location": "London, United Kingdom",
+      "language": "English",
+      "price": 457,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "don_quijote_buenos_aires",
+      "name": "Don Quijote Buenos Aires",
+      "location": "Buenos Aires, Argentina",
+      "language": "Spanish",
+      "price": 661,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "es_dubai",
+      "name": "ES Dubai",
+      "location": "Dubai, United Arab Emirates",
+      "language": "English",
+      "price": 901,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "sprachcaffe_paris",
+      "name": "Sprachcaffe Paris",
+      "location": "Paris, France",
+      "language": "French",
+      "price": 1284,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "ilsc_vancouver",
+      "name": "ILSC Vancouver",
+      "location": "Vancouver, Canada",
+      "language": "English",
+      "price": 848,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "kings_brighton",
+      "name": "Kings Brighton",
+      "location": "Brighton, United Kingdom",
+      "language": "English",
+      "price": 1147,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "ces_edinburgh",
+      "name": "CES Edinburgh",
+      "location": "Brighton, United Kingdom",
+      "language": "English",
+      "price": 1010,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "linguaschools_barcelona",
+      "name": "Linguaschools Barcelona",
+      "location": "Barcelona, Spain",
+      "language": "Spanish",
+      "price": 523,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "academia_contacto_alicante",
+      "name": "Academia Contacto Alicante",
+      "location": "Alicante, Spain",
+      "language": "Spanish",
+      "price": 460,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "don_quijote_costa_rica",
+      "name": "Don Quijote Costa Rica",
+      "location": "Santo Domingo de Heredia, Costa Rica",
+      "language": "Spanish",
+      "price": 792,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "ali_montreal",
+      "name": "ALI Montreal",
+      "location": "Montreal, Canada",
+      "language": "French",
+      "price": 955,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "actiLingua_academy",
+      "name": "ActiLingua Academy",
+      "location": "Vienna, Austria",
+      "language": "German",
+      "price": 689,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "Don_quijote_sosua",
+      "name": "Don Quijote Sosua",
+      "location": "Sosua, Dominican Republic",
+      "language": "Spanish",
+      "price": 661,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "Don_quijote_sosua",
+      "name": "Don Quijote Sosua",
+      "location": "Sosua, Dominican Republic",
+      "language": "Spanish",
+      "price": 661,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "sprachcaffe_frankfurt",
+      "name": "Sprachcaffe Frankfurt",
+      "location": "Frankfurt, Germany",
+      "language": "German",
+      "price": 950,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "bws_germanlingua_berlin",
+      "name": "BWS Germanlingua Berlin",
+      "location": "Berlin, Germany",
+      "language": "German",
+      "price": 851,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "alpadia_berlin",
+      "name": "Alpadia Berlin",
+      "location": "Berlin, Germany",
+      "language": "German",
+      "price": 790,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "france_langue_bordeaux",
+      "name": "France Langue Bordeaux",
+      "location": "Bordeaux, France",
+      "language": "French",
+      "price": 1181,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "lsi_zurich",
+      "name": "LSI Zurich",
+      "location": "Zurich, Switzerland",
+      "language": "German",
+      "price": 1581,
+      "weeks": "2 weeks"
+    },
+    {
+      "id": "alpadia_montreux",
+      "name": "Alpadia Montreux",
+      "location": "Montreux, Switzerland",
+      "language": "French",
+      "price": 969,
+      "weeks": "2 weeks"
+    }
+  ],
+  "user": [],
+  "email": []
+}

@@ -94,6 +94,11 @@
 
 /* fonts */
 
+.popupSignUp h2{
+  text-align: center;
+  font-size: var(--font-size-h2);
+}
+
 .signUpContent>h2{
   text-align: center;
   font-size: var(--font-size-h2);
@@ -133,6 +138,11 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  .popupSignUp h2{
+    margin: 5px 0px 30px 0px;
+    font-size: var(--font-size-h2-m);
+  }
 
   .signUpForms {
     width: 100%;

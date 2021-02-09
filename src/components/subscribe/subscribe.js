@@ -17,6 +17,16 @@ const Subscribe = () => {
     } else {
       setEmailValid(true);
       setEmail("");
+
+      const userEmail = { email };
+      fetch("http://localhost:4000/email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(userEmail),
+      }).then(() => {
+        console.log("New userEmail add!!!");
+      });
+
       setModalActive(true);
       setEmailValid(false);
     }

@@ -48,6 +48,16 @@ const SignUp = () => {
         validateOnBlur
         onSubmit={(values) => {
           console.log(values);
+
+          const user = { values };
+          fetch("http://localhost:4000/user", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(user),
+          }).then(() => {
+            console.log("New user add!!!");
+          });
+          
           setPopupActive(true);
         }}
         validationSchema={validationSchema}

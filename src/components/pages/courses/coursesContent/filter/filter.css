@@ -15,7 +15,8 @@
   font-size: var(--font-size-button);
 }
 
-.filterItem:hover {
+.filterItem:hover,
+.activeFilter:hover {
   cursor: pointer;
   background-color: #ffca76;
   color: white;
