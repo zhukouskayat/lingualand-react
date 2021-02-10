@@ -1,0 +1,146 @@
+/* geometry */
+
+.book {
+  margin-top: 30px;
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: var(--button-border-radius);
+}
+
+.schoolCourses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.schoolCourses div {
+  padding: 30px 30px;
+  border-radius: var(--button-border-radius);
+  width: 47%;
+}
+
+.schoolDetails {
+  padding-bottom: 50px;
+}
+
+.schoolDetails h2 {
+  padding: 50px 0px 10px 0px;
+}
+
+.discription {
+  margin-top: 30px;
+  padding: 30px 30px;
+  border-radius: var(--button-border-radius);
+  margin-bottom: 50px;
+}
+
+/* fonts */
+
+.book {
+  font-size: var(--font-size-button);
+}
+
+.schoolDetails h2 {
+  font-size: var(--font-size-h2);
+}
+
+.schoolCourses div {
+  text-align: center;
+}
+
+.schoolDetails > p {
+  font-size: var(--font-size-p-big);
+}
+
+.schoolCourses h3 {
+  font-size: var(--font-size-h3);
+}
+
+.schoolCourses p {
+  font-size: var(--font-size-p-big);
+}
+
+.schoolPrice {
+  margin: 15px 0px;
+  font-weight: var(--font-weight-p);
+}
+
+.discription {
+  text-align: justify;
+}
+
+/* colors */
+
+.book {
+  background-color: #2e1aaf;
+  color: white;
+}
+
+.book:hover {
+  background-color: #2e53bc;
+}
+
+.schoolCourses div {
+  background-color: white;
+}
+
+.schoolDetails {
+  background-color: var(--background-color);
+}
+
+.discription {
+  background-color: white;
+}
+
+/* media */
+
+@media screen and (max-width: 950px) {
+
+  .book {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .schoolCourses {
+    flex-direction: column;
+  }
+
+  .schoolCourses div {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .book {
+    font-size: var(--font-size-button-m);
+  }
+
+  .discription {
+    margin-bottom: 30px;
+  }
+
+  .schoolDetails h2 {
+    padding: 30px 0px 10px 0px;
+    font-size: var(--font-size-h2-m);
+  }
+  
+  .schoolCourses div {
+    text-align: center;
+  }
+  
+  .schoolDetails > p {
+    font-size: var(--font-size-p-big-m);
+  }
+  
+  .schoolCourses h3 {
+    font-size: var(--font-size-h3-m);
+  }
+  
+  .schoolCourses p {
+    font-size: var(--font-size-p-big-m);
+  }
+}
