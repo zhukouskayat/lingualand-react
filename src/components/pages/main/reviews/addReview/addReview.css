@@ -1,0 +1,87 @@
+/* geomerty */
+
+.addReview h2 {
+  margin-top: 50px;
+}
+
+.nameReview {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nameReview input{
+  padding-left: 15px;
+  width: 100%;
+  height: var(--button-height);
+  border-radius: var(--button-border-radius);
+}
+
+.addReview textarea{
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 100%;
+  border: 0px;
+  border-radius: var(--button-border-radius);
+}
+
+.reviewButtons {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.reviewButtons button {
+  width: var(--button-width);
+  height: var(--button-height);
+  border-radius: var(--button-border-radius);
+  margin-left: 20px;
+}
+
+/* fonts */
+
+.reviewButtons button {
+  font-size: var(--font-size-button);
+}
+
+/* colors */
+
+.reviewButtons button:hover {
+  cursor: pointer;
+  background-color: #2e53bc;
+}
+
+.send {
+  background-color: #2e1aaf;
+  color: white;
+}
+
+.clear {
+  background-color: #6986fc;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+
+  .addReview h2 {
+    margin-top: 30px;
+  }
+
+  .reviewButtons {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .reviewButtons button {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    font-size: var(--font-size-button-m);
+  }
+
+}

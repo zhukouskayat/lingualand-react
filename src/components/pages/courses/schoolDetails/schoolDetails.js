@@ -2,7 +2,6 @@ import Subscribe from "components/subscribe/subscribe";
 import React from "react";
 import { useParams } from "react-router-dom";
 import "./schoolDetails.css";
-import Popup from "components/popup/popup";
 
 function Course({ schools }) {
 
