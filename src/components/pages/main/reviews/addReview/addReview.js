@@ -5,8 +5,7 @@ function AddReview(props) {
   const [name, setName] = useState("");
   const [review, setReview] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = () => {
     const reviewData = { name, review };
 
     fetch("http://localhost:4000/reviews", {
@@ -19,7 +18,7 @@ function AddReview(props) {
     });
   };
 
-  const handleClear =(event) => {
+  const handleClear = (event) => {
     event.preventDefault();
     setName("");
     setReview("");
@@ -28,8 +27,8 @@ function AddReview(props) {
   return (
     <section>
       <div className="addReview">
-      <h2>
-        Add review!
+        <h2>
+          Add review!
       </h2>
         <form onSubmit={handleSubmit}>
           <div className="nameReview">
@@ -49,7 +48,7 @@ function AddReview(props) {
             />
           </div>
           <div className="reviewButtons">
-          <button className="clear" type="button" onClick={handleClear} >
+            <button className="clear" type="button" onClick={handleClear} >
               Clear
             </button>
             <button className="send" type="submit">

@@ -6,28 +6,26 @@ function ReviewItems() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const abortCount = new AbortController();
 
-    fetch("http://localhost:4000/reviews", { signal: abortCount.signal })
+    fetch("http://localhost:4000/reviews",)
       .then((response) => response.json())
       .then((result) => {
         setItems(result);
       });
-    return () => abortCount.abort();
-  }, [items]);
+  }, []);
 
   return (
     <>
-        {items.map((item) => (
-          <div key={item.id} className="reviewItem">
+      {items.map((item) => (
+        <div key={item.id} className="reviewItem">
           <h3>
-          {item.name}
+            {item.name}
           </h3>
           <p>
-          {item.review}
+            {item.review}
           </p>
-          </div>
-        ))}
+        </div>
+      ))}
     </>
   );
 }
