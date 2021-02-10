@@ -5,6 +5,24 @@
   margin: 0 -10px 50px -10px;
 }
 
+.coursesContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#languageCourses {
+  background-color: var(--background-color);
+}
+
+@media screen and (max-width: 1000px) {
+
+  .coursesContent {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .schoolsList {
     margin-bottom: 10px;

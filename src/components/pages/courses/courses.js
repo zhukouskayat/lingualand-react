@@ -1,18 +1,24 @@
-import Subscribe from "components/subscribe/subscribe";
 import React from "react";
+import { Switch, Route, useRouteMatch } from "react-router-dom";
 
 import "./courses.css";
-import CoursesContent from "./coursesContent/coursesContent";
-import CoursesHeading from "./coursesHeading/coursesHeading";
+import Course from "./schoolDetails/schoolDetails";
+import SchoolList from "./schoolsList/schoolsList";
 
-function Courses() {
+function Courses({schools}) {
+
+  const match = useRouteMatch();
+
   return (
     <>
-      <div id="languageCourses">
-        <CoursesHeading />
-        <CoursesContent />
-      </div>
-      <Subscribe />
+    <Switch>
+      <Route path={`${match.path}/school/:id`}>
+      <Course school={schools} />
+      </Route>
+      <Route path={`${match.path}`}>
+      <SchoolList schools={schools} />
+      </Route>
+    </Switch>
     </>
   );
 }

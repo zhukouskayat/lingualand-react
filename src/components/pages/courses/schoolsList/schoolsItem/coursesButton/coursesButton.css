@@ -24,7 +24,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .buttonItem {
+  button.buttonItem {
     font-size: var(--font-size-button-m);
     width: 100%;
   }

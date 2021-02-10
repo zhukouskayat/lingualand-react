@@ -13,6 +13,12 @@
       "price": 661
     },
     {
+      "id": "ohla_miami",
+      "name": "OHLA Miami",
+      "location": "Miami, United States",
+      "price": 1125
+    },
+    {
       "id": "es_dubai",
       "name": "ES Dubai",
       "location": "Dubai, UAE",
